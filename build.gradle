@@ -27,7 +27,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	//types
-	implementation 'com.vladmihalcea:hibernate-types-60:2.21.1'
+	implementation 'org.hibernate:hibernate-core:6.1.7.Final'
     //injeta Scrips SQL
 	implementation "org.flywaydb:flyway-core"
 

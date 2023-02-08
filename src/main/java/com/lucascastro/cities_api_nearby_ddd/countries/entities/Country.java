@@ -7,10 +7,6 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-
-//Mapea as variaveis com as informações do banco de dados da tabela pais
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

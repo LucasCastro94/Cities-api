@@ -4,7 +4,6 @@ package com.lucascastro.cities_api_nearby_ddd.states.entities;
 import com.lucascastro.cities_api_nearby_ddd.countries.entities.Country;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.JdbcTypeCode;

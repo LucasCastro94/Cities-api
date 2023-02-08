@@ -1,10 +1,8 @@
-package com.lucascastro.cities_api_nearby_ddd.states.controller;
+package com.lucascastro.cities_api_nearby_ddd.cities.controller;
 
-
-import com.lucascastro.cities_api_nearby_ddd.states.entities.State;
-import com.lucascastro.cities_api_nearby_ddd.states.repositories.StateRepository;
+import com.lucascastro.cities_api_nearby_ddd.cities.entities.City;
+import com.lucascastro.cities_api_nearby_ddd.cities.repositories.CityRepository;
 import lombok.AllArgsConstructor;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,15 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-
 @RestController
 @AllArgsConstructor(onConstructor = @__(@Autowired))
-@RequestMapping("states")
-public class StateController {
-  private final StateRepository repository;
+@RequestMapping("cities")
+public class CityController{
+
+  private final CityRepository repository;
 
   @GetMapping
-  public Page<State> states(final Pageable page)
+  public Page<City> cities(final Pageable page)
   {
     return repository.findAll(page);
   }
