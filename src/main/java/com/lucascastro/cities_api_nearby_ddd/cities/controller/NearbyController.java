@@ -3,7 +3,6 @@ package com.lucascastro.cities_api_nearby_ddd.cities.controller;
 
 import com.lucascastro.cities_api_nearby_ddd.cities.entities.City;
 import com.lucascastro.cities_api_nearby_ddd.cities.service.DistanceService;
-
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
