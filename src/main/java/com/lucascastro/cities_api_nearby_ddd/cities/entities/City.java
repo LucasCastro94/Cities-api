@@ -7,8 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.geo.Point;
 
-
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,11 +25,9 @@ public class City {
 
   private Integer ibge;
 
-  // 1st
   @Column(name = "lat_lon")
   private String geolocation;
 
-  // 2nd
   @Convert(converter = ConvertPoint.class)
   @Column(name = "lat_lon", updatable = false, insertable = false)
   private Point location;

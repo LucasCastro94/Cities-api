@@ -14,9 +14,9 @@ public class StateDDDCodeController
 {
     ServiceState service;
 
-    @GetMapping("/{ddd}")
+    @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public String dddCode(@PathVariable int ddd) throws DDDNotFoundException
+    public String dddCode(@RequestParam(name = "code") final int ddd) throws DDDNotFoundException
     {
       return service.findDDD(ddd);
     }
